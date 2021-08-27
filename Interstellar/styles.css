@@ -1,0 +1,63 @@
+html {
+    background: url("img/1618566638_39-funart_pro-p-oboi-fon-chernoe-zvezdnoe-nebo-45.jpg");
+}
+
+h2, title, body {
+    color: #fff5d1;
+}
+
+h1, h3 {
+    font-family: "Times New Roman", sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin: 2% 0;
+    color: #ff511f;
+}
+
+h2 {
+    font-family: "Times New Roman", "Segoe UI", sans-serif;
+    margin: 5%;
+}
+
+.image {
+    float: left;
+    margin: 5%;
+    width: 380px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.theme-button {
+    background-color: #87e1d7;
+    float: right;
+}
+
+.Description td {
+    margin: auto;
+}
+
+#trailer {
+    margin: 5%;
+    align-items: center;
+    font-size: xx-large;
+}
+
+iframe {
+    margin: 3%;
+    width: 1400px;
+    height: 1400px;
+}
+
+.light-theme {
+    background: url("img/sky.jpeg");
+    background-size: auto;
+}
+
+.new-img {
+    background: #ff511f;
+}
