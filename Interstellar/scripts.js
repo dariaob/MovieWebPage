@@ -39,9 +39,8 @@ function saveComments() {
 
 //Считаем их количество
 function commentsAmount() {
-    for (let i = 0; i < comments.length; i++) {
-        counter++;
-    }
+    counter = comments.length;
+    counterStorage.innerHTML = `Количество комментариев: ${counter}`;
 }
 
 //Загружаем комментарии
@@ -49,7 +48,7 @@ function loadComments() {
     if (localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
     showComments();
     commentsAmount();
-    counterStorage.innerHTML = `Количество комментариев: ${counter}`;
+
 }
 
 //Создаем функцию, которая преобразует время в человеческое
@@ -97,38 +96,30 @@ submitButton.onclick = function () {
     console.log(comment);
     saveComments();
     showComments();
+    commentsAmount();
 }
 
 //Блок кода, отвечающий за похожие фильмы
-// let movieName = ['Гравитация', 'Прибытие', 'Начало', 'Марсианин', 'Луна 2112', 'Космическая одиссея' ];
-// let moviePath = ['img/SimilarMovie/Gravity.jpg', 'img/SimilarMovie/arrival.jpg', 'img/SimilarMovie/inception.jpg', 'img/SimilarMovie/marsianin.jpg',
-//     'img/SimilarMovie/moon2112.jpg', 'img/SimilarMovie/space oddysey.jpg']
-// let moviesField = document.querySelector('#similarMovies');
-//
-// //showMovies();
+let movieName = ['Гравитация', 'Прибытие', 'Начало', 'Марсианин', 'Луна 2112', 'Космическая одиссея' ];
+let moviePath = ['img/SimilarMovie/Gravity.jpg', 'img/SimilarMovie/arrival.jpg', 'img/SimilarMovie/inception.jpg', 'img/SimilarMovie/marsianin.jpg',
+  'img/SimilarMovie/moon2112.jpg', 'img/SimilarMovie/spaceOdyssey.jpg']
+let moviesField = document.querySelector('#moviesPic');
 
-//
-// function showMovies() {
-//     //saveMovies();
-//     let name = '';
-//     for (let i=0; i < moviePath.length; i++) {
-//         let elem = document.createElement('img');
-//         elem.setAttribute('src', moviePath[i]);
-//         moviesField.appendChild(elem);
-//         moviesField.classList.toggle('.img-size')
-//     }
-//
-//    // if (localStorage.getItem('movieName')) movieName = JSON.parse(localStorage.getItem('movieName'));
-//     movieName.forEach(function (item) {
-//         name += `<td>${item.name}</td>`
-//     })
-//
-// }
-//
+showMovies();
 
-// function saveMovies() {
-//     for (let i = 0; i< movieName.length; i++) {
-//         localStorage.setItem('movieName', JSON.stringify(moviesField));
-//     }
-// }
+function showMovies() {
 
+
+for (let i=0; i < moviePath.length; i++) {
+       let elem = document.createElement('img');
+       elem.setAttribute('src', moviePath[i]);
+       elem.style.width = '200px';
+       moviesField.appendChild(elem);
+    }
+
+movieName.forEach(function (name) {
+    let item = document.createElement('figcaption');
+    item.innerText = name;
+    moviesField.appendChild(item);
+})
+}
