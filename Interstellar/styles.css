@@ -1,9 +1,19 @@
-html {
-    background: url("img/1618566638_39-funart_pro-p-oboi-fon-chernoe-zvezdnoe-nebo-45.jpg");
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4B6587;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
-h2, title, body {
+h2, title {
     color: #fff5d1;
+}
+
+p {
+    color: #FFF5EA;
 }
 
 h1, h3 {
@@ -22,12 +32,12 @@ h2 {
 .image {
     float: left;
     margin: 5%;
-    width: 380px;
+    width: 23em;
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0.9em;
+    padding-left: 0.9em;
     margin-right: auto;
     margin-left: auto;
 }
@@ -38,6 +48,7 @@ h2 {
 }
 
 .Description td {
+    color: #FFF5EA;
     margin: auto;
 }
 
@@ -47,17 +58,27 @@ h2 {
     font-size: xx-large;
 }
 
-iframe {
-    margin: 3%;
-    width: 1400px;
-    height: 1400px;
-}
 
 .light-theme {
-    background: url("img/sky.jpeg");
+    background: #BAD7DF;
     background-size: auto;
+    width: 100%;
+    height: auto;
+}
+
+.light-theme p,h1,h2,h3,h4  {
+    color: black;
+}
+
+.light-theme .Description td {
+    color: black;
 }
 
 .new-img {
     background: #ff511f;
+}
+
+.counter {
+    justify-content: left;
+    align-items: flex-end;
 }
