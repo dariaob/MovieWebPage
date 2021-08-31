@@ -1,6 +1,6 @@
 //Меняем цвет темы
 let  page = document.querySelector('body');
-let themeButton = document.querySelector('.theme-button');
+let themeButton = document.querySelector('#theme-button');
 
 themeButton.onclick = function () {
     page.classList.toggle('light-theme');
@@ -8,7 +8,7 @@ themeButton.onclick = function () {
 
 //Меняем картинку у постера
 let img = document.querySelector('img');
-let imageButton = document.querySelector('.image-button');
+let imageButton = document.querySelector('#image-button');
 
 imageButton.onclick = function () {
         img.src = 'img/img2.jpg';
@@ -19,7 +19,7 @@ imageButton.onclick = function () {
 }
 
 //Переносим просмотр трейлера в отдельное окно
-let trailerButton = document.querySelector('.trailer-button');
+let trailerButton = document.querySelector('#trailer-button');
 
 trailerButton.onclick = function () {
     window.open('https://www.youtube.com/embed/qcPfI0y7wRU');
@@ -100,26 +100,27 @@ submitButton.onclick = function () {
 }
 
 //Блок кода, отвечающий за похожие фильмы
-let movieName = ['Гравитация', 'Прибытие', 'Начало', 'Марсианин', 'Луна 2112', 'Космическая одиссея' ];
-let moviePath = ['img/SimilarMovie/Gravity.jpg', 'img/SimilarMovie/arrival.jpg', 'img/SimilarMovie/inception.jpg', 'img/SimilarMovie/marsianin.jpg',
-  'img/SimilarMovie/moon2112.jpg', 'img/SimilarMovie/spaceOdyssey.jpg']
-let moviesField = document.querySelector('#moviesPic');
+// let movieN = ['Гравитация', 'Прибытие', 'Начало', 'Марсианин', 'Луна 2112', 'Космическая одиссея' ];
+// let moviePath = ['img/SimilarMovie/Gravity.jpg', 'img/SimilarMovie/arrival.jpg', 'img/SimilarMovie/inception.jpg', 'img/SimilarMovie/marsianin.jpg',
+//   'img/SimilarMovie/moon2112.jpg', 'img/SimilarMovie/spaceOdyssey.jpg']
+// let moviesField = document.querySelector('#similarMovies');
+//
+// showMovies();
+//
+// function showMovies() {
+//
+//
+// for (let i=0; i < moviePath.length; i++) {
+//        let newElem = document.createElement('td');
+//        let elem = document.createElement('img');
+//        elem.setAttribute('src', moviePath[i]);
+//        elem.style.width = '200px';
+//        elem.style.height = '300px';
+//        moviesField.appendChild(newElem);
+//        moviesField.appendChild(elem);
+//     }
+//
+// let nameArr = movieName.prototype.join(' ');
+// moviesField.innerHTML = `<tr>${nameArr}</tr>`;
+// }
 
-showMovies();
-
-function showMovies() {
-
-
-for (let i=0; i < moviePath.length; i++) {
-       let elem = document.createElement('img');
-       elem.setAttribute('src', moviePath[i]);
-       elem.style.width = '200px';
-       moviesField.appendChild(elem);
-    }
-
-movieName.forEach(function (name) {
-    let item = document.createElement('figcaption');
-    item.innerText = name;
-    moviesField.appendChild(item);
-})
-}

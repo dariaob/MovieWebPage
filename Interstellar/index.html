@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="styles.css" type="text/css"/>
 </head>
 <body>
-    <h1>Интерстеллар</h1>
-    <h3>Interstellar</h3>
+    <h1 class="h1">Интерстеллар</h1>
+    <h3 class="h3">Interstellar</h3>
     <div class="container">
-        <button class="theme-button" type="button">Изменить фон</button>
+        <button class="btn btn-outline-danger" id="theme-button" type="button">Изменить фон</button>
     </div>
 
     <div class="container">
-        <button class="image-button" type="button">Изменить постер</button>
+        <button class="btn btn-outline-danger" id="image-button" type="button">Изменить постер</button>
     </div>
 
     <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/201ca9bb-2905-49ed-9226-c9d584bcb09e/orig" alt="Постер" class="image">
-    <h2>О фильме</h2>
+    <h2 class="h2">О фильме</h2>
     <table class="Description" id="table">
             <tbody>
             <tr>
-                <td>Год производства</td>
+                <td>Год </td>
                 <td>2014</td>
             </tr>
             <tr>
@@ -85,7 +85,7 @@
             </tbody>
         </table>
     <div class="container">
-        <h4>Рейтинг</h4>
+        <h4 class="h4">Рейтинг</h4>
         <div class="rating" id="rating-star">
             <img src="img/star.svg" alt="Рейтинг 8 из 10" class="star">
             <img src="img/star.svg" alt="" class="star">
@@ -102,7 +102,7 @@
         <div class="rating-number">8/10</div>
     </div>
 
-    <h3>Описание</h3>
+    <h3 class="h3" id="moviePlot">Описание</h3>
     <p id="plot">
         Когда засуха, пыльные бури и вымирание растений приводят человечество к продовольственному кризису,
         коллектив исследователей и учёных отправляется сквозь червоточину (которая предположительно соединяет
@@ -113,16 +113,60 @@
     </p>
 
 
-    <div class="container" id="trailer">
-        <button class="trailer-button" type="button">Посмотреть трейлер</button>
+    <div class="d-grid gap-2 col-6 mx-auto" id="trailer">
+        <button class="btn btn-outline-danger" type="button" id="trailer-button">Посмотреть трейлер</button>
     </div>
 
-
-    <h3>Похожие фильмы</h3>
+    <h3 class="h3">Похожие фильмы</h3>
     <div class="container" id="similarMovies">
-    <figure id="moviesPic">
+    <table>
+        <tbody>
+        <tr id="moviesTable">
+            <td> <div class="figure">
+                <img src="img/SimilarMovie/arrival.jpg" alt="Прибытие" class="moviesPics">
+            </div>
+            <p class="movieName">Прибытие</p>
+            </td>
 
-    </figure>
+            <td>
+                <div class="figure">
+                    <img src="img/SimilarMovie/Gravity.jpg" alt="Гравитация" class="moviesPics">
+                </div>
+                <p class="movieName">Гравитация</p>
+            </td>
+
+            <td>
+                <div class="figure">
+                    <img src="img/SimilarMovie/inception.jpg" alt="Начало" class="moviesPics">
+                </div>
+                <p class="movieName">Начало</p>
+            </td>
+
+            <td>
+                <div class="figure">
+                    <img src="img/SimilarMovie/marsianin.jpg" alt="Марсианин" class="moviesPics">
+                </div>
+                <p class="movieName">Марсианин</p>
+            </td>
+
+            <td>
+                <div class="figure">
+                    <img src="img/SimilarMovie/moon2112.jpg" alt="Луна 2112" class="moviesPics">
+                </div>
+                <p class="movieName">Луна 2112</p>
+            </td>
+
+            <td>
+                <div class="figure">
+                    <img src="img/SimilarMovie/spaceOdyssey.jpg" alt="Космическая одиссея" class="moviesPics">
+                </div>
+                <p class="movieName">Космическая одиссея</p>
+            </td>
+
+        </tr>
+        </tbody>
+
+    </table>
     </div>
 
     <div class="container">
@@ -137,15 +181,15 @@
             <div class="col-lg-6">
                 <form>
                     <div class="form-group">
-                        <label for="comment-name">Name:</label>
+                        <label for="comment-name">Имя:</label>
                         <input type="name" class="form-control" id="comment-name" placeholder="Ваше имя">
                     </div>
                     <div class="form-group">
-                        <label for="comment-body">Comment:</label>
+                        <label for="comment-body">Комментарий:</label>
                         <input type="body" class="form-control" id="comment-body" placeholder="Ваш комментарий">
                     </div>
                     <div class="form-group">
-                        <button type="submit" id="comment-add" class="btn btn-primary">Добавить комментарий</button>
+                        <button type="submit" id="comment-add" class="btn btn-outline-success">Добавить комментарий</button>
                     </div>
                 </form>
             </div>

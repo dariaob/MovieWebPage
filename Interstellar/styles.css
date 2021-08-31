@@ -1,5 +1,6 @@
 body {
-    background-color: #4B6587;
+    background-color: #111;
+    color: #f4f4f4;
 }
 .image {
     float: left;
@@ -7,25 +8,18 @@ body {
     width: 23em;
 }
 
-h2, title {
-    color: #fff5d1;
-}
-
-p {
-    color: #FFF5EA;
-}
-
 h1, h3 {
     font-family: "Times New Roman", sans-serif;
     font-size: xx-large;
     text-align: center;
     margin: 2% 0;
-    color: #ff511f;
+    color: #ffffff;
 }
 
-h2 {
+h2, h4 {
     font-family: "Times New Roman", "Segoe UI", sans-serif;
     margin: 5%;
+    color: #FFF5EA;
 }
 
 
@@ -36,8 +30,7 @@ h2 {
     margin-left: auto;
 }
 
-.theme-button {
-    background-color: #87e1d7;
+#theme-button {
     float: right;
 }
 
@@ -54,15 +47,13 @@ h2 {
 
 
 .light-theme {
-    background: #BAD7DF;
+    background: #f4f4f4;
+    color: #111;
     background-size: auto;
     width: 100%;
     height: auto;
 }
 
-.light-theme p,h1,h2,h3,h4  {
-    color: black;
-}
 
 .light-theme .Description td {
     color: black;
@@ -76,4 +67,24 @@ h2 {
     justify-content: left;
     align-items: flex-end;
 }
+
+.moviesPics {
+    width: 250px;
+    height: 350px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#plot {
+    padding: 1% 5%;
+}
+
+#moviePlot {
+    padding: 1% 5%;
+}
+
+.image-button {
+    border-radius: 5px;
+}
+
 
