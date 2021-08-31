@@ -98,3 +98,11 @@ submitButton.onclick = function () {
     showComments();
     commentsAmount();
 }
+
+function dataUpdate() {
+    setTimeout(function () {
+        document.getElementById('moviesTable').click()}, 2000);
+
+
+}
+dataUpdate();
