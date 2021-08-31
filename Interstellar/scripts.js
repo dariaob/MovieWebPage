@@ -98,29 +98,3 @@ submitButton.onclick = function () {
     showComments();
     commentsAmount();
 }
-
-//Блок кода, отвечающий за похожие фильмы
-// let movieN = ['Гравитация', 'Прибытие', 'Начало', 'Марсианин', 'Луна 2112', 'Космическая одиссея' ];
-// let moviePath = ['img/SimilarMovie/Gravity.jpg', 'img/SimilarMovie/arrival.jpg', 'img/SimilarMovie/inception.jpg', 'img/SimilarMovie/marsianin.jpg',
-//   'img/SimilarMovie/moon2112.jpg', 'img/SimilarMovie/spaceOdyssey.jpg']
-// let moviesField = document.querySelector('#similarMovies');
-//
-// showMovies();
-//
-// function showMovies() {
-//
-//
-// for (let i=0; i < moviePath.length; i++) {
-//        let newElem = document.createElement('td');
-//        let elem = document.createElement('img');
-//        elem.setAttribute('src', moviePath[i]);
-//        elem.style.width = '200px';
-//        elem.style.height = '300px';
-//        moviesField.appendChild(newElem);
-//        moviesField.appendChild(elem);
-//     }
-//
-// let nameArr = movieName.prototype.join(' ');
-// moviesField.innerHTML = `<tr>${nameArr}</tr>`;
-// }
-

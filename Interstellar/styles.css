@@ -34,10 +34,12 @@ h2, h4 {
     float: right;
 }
 
-.Description td {
+.Description  {
     color: #FFF5EA;
-    margin: auto;
+    margin: 2%;
 }
+
+
 
 #trailer {
     margin: 5%;
@@ -54,6 +56,21 @@ h2, h4 {
     height: auto;
 }
 
+.light-theme .h1 {
+    color: #111;
+}
+
+.light-theme .h2 {
+    color: #111;
+}
+
+.light-theme .h3 {
+    color: #373737;
+}
+
+.light-theme .h4 {
+    color: #373737;
+}
 
 .light-theme .Description td {
     color: black;
@@ -81,6 +98,7 @@ h2, h4 {
 
 #moviePlot {
     padding: 1% 5%;
+    text-align: center;
 }
 
 .image-button {
