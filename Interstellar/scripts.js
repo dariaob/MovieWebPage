@@ -101,7 +101,7 @@ submitButton.onclick = function () {
 
 function dataUpdate() {
     setTimeout(function () {
-        document.getElementById('moviesTable').click()}, 2000);
+        document.getElementById('moviesTable')}, 2000);
 
 
 }
